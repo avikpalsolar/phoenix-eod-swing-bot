@@ -1,1 +1,754 @@
-
+SYMBOL,INDUSTRY,Market Cap,SECTOR
+ABB,Capital Goods,Large Cap,Capital Goods
+ADANIENSOL,Power,Large Cap,Power
+ADANIENT,Metals & Mining,Large Cap,Metals & Mining
+ADANIGREEN,Power,Large Cap,Power
+ADANIPORTS,Services,Large Cap,Services
+ADANIPOWER,Power,Large Cap,Power
+AMBUJACEM,Construction Materials,Large Cap,Construction Materials
+APOLLOHOSP,Healthcare,Large Cap,Healthcare
+ASIANPAINT,Consumer Durables,Large Cap,Consumer Durables
+DMART,Consumer Services,Large Cap,Consumer Services
+AXISBANK,Financial Services,Large Cap,Financial Services
+BSE,Financial Services,Large Cap,Financial Services
+BAJAJ-AUTO,Automobile and Auto Components,Large Cap,Automobile and Auto Components
+BAJFINANCE,Financial Services,Large Cap,Financial Services
+BAJAJFINSV,Financial Services,Large Cap,Financial Services
+BAJAJHLDNG,Financial Services,Large Cap,Financial Services
+BANKBARODA,Financial Services,Large Cap,Financial Services
+BEL,Capital Goods,Large Cap,Capital Goods
+BPCL,Oil Gas & Consumable Fuels,Large Cap,Oil Gas & Consumable Fuels
+BHARTIARTL,Telecommunication,Large Cap,Telecommunication
+BOSCHLTD,Automobile and Auto Components,Large Cap,Automobile and Auto Components
+BRITANNIA,Fast Moving Consumer Goods,Large Cap,Fast Moving Consumer Goods
+CGPOWER,Capital Goods,Large Cap,Capital Goods
+CANBK,Financial Services,Large Cap,Financial Services
+CHOLAFIN,Financial Services,Large Cap,Financial Services
+CIPLA,Healthcare,Large Cap,Healthcare
+COALINDIA,Oil Gas & Consumable Fuels,Large Cap,Oil Gas & Consumable Fuels
+CUMMINSIND,Capital Goods,Large Cap,Capital Goods
+DLF,Realty,Large Cap,Realty
+DIVISLAB,Healthcare,Large Cap,Healthcare
+DRREDDY,Healthcare,Large Cap,Healthcare
+EICHERMOT,Automobile and Auto Components,Large Cap,Automobile and Auto Components
+ETERNAL,Consumer Services,Large Cap,Consumer Services
+GAIL,Oil Gas & Consumable Fuels,Large Cap,Oil Gas & Consumable Fuels
+GODREJCP,Fast Moving Consumer Goods,Large Cap,Fast Moving Consumer Goods
+GRASIM,Construction Materials,Large Cap,Construction Materials
+HCLTECH,Information Technology,Large Cap,Information Technology
+HDFCAMC,Financial Services,Large Cap,Financial Services
+HDFCBANK,Financial Services,Large Cap,Financial Services
+HDFCLIFE,Financial Services,Large Cap,Financial Services
+HINDALCO,Metals & Mining,Large Cap,Metals & Mining
+HAL,Capital Goods,Large Cap,Capital Goods
+HINDUNILVR,Fast Moving Consumer Goods,Large Cap,Fast Moving Consumer Goods
+HINDZINC,Metals & Mining,Large Cap,Metals & Mining
+POWERINDIA,Capital Goods,Large Cap,Capital Goods
+HYUNDAI,Automobile and Auto Components,Large Cap,Automobile and Auto Components
+ICICIBANK,Financial Services,Large Cap,Financial Services
+ITC,Fast Moving Consumer Goods,Large Cap,Fast Moving Consumer Goods
+IOC,Oil Gas & Consumable Fuels,Large Cap,Oil Gas & Consumable Fuels
+IRFC,Financial Services,Large Cap,Financial Services
+INFY,Information Technology,Large Cap,Information Technology
+INDIGO,Services,Large Cap,Services
+JSWSTEEL,Metals & Mining,Large Cap,Metals & Mining
+JINDALSTEL,Metals & Mining,Large Cap,Metals & Mining
+JIOFIN,Financial Services,Large Cap,Financial Services
+KOTAKBANK,Financial Services,Large Cap,Financial Services
+LTM,Information Technology,Large Cap,Information Technology
+LT,Construction,Large Cap,Construction
+M&M,Automobile and Auto Components,Large Cap,Automobile and Auto Components
+MARUTI,Automobile and Auto Components,Large Cap,Automobile and Auto Components
+MAXHEALTH,Healthcare,Large Cap,Healthcare
+MAZDOCK,Capital Goods,Large Cap,Capital Goods
+MUTHOOTFIN,Financial Services,Large Cap,Financial Services
+NTPC,Power,Large Cap,Power
+NESTLEIND,Fast Moving Consumer Goods,Large Cap,Fast Moving Consumer Goods
+ONGC,Oil Gas & Consumable Fuels,Large Cap,Oil Gas & Consumable Fuels
+PIDILITIND,Chemicals,Large Cap,Chemicals
+POLYCAB,Capital Goods,Large Cap,Capital Goods
+PFC,Financial Services,Large Cap,Financial Services
+POWERGRID,Power,Large Cap,Power
+PNB,Financial Services,Large Cap,Financial Services
+RELIANCE,Oil Gas & Consumable Fuels,Large Cap,Oil Gas & Consumable Fuels
+SBILIFE,Financial Services,Large Cap,Financial Services
+MOTHERSON,Automobile and Auto Components,Large Cap,Automobile and Auto Components
+SHRIRAMFIN,Financial Services,Large Cap,Financial Services
+ENRIN,Capital Goods,Large Cap,Capital Goods
+SIEMENS,Capital Goods,Large Cap,Capital Goods
+SOLARINDS,Chemicals,Large Cap,Chemicals
+SBIN,Financial Services,Large Cap,Financial Services
+SUNPHARMA,Healthcare,Large Cap,Healthcare
+TVSMOTOR,Automobile and Auto Components,Large Cap,Automobile and Auto Components
+TATACAP,Financial Services,Large Cap,Financial Services
+TCS,Information Technology,Large Cap,Information Technology
+TATACONSUM,Fast Moving Consumer Goods,Large Cap,Fast Moving Consumer Goods
+TMCV,Capital Goods,Large Cap,Capital Goods
+TMPV,Automobile and Auto Components,Large Cap,Automobile and Auto Components
+TATAPOWER,Power,Large Cap,Power
+TATASTEEL,Metals & Mining,Large Cap,Metals & Mining
+TECHM,Information Technology,Large Cap,Information Technology
+TITAN,Consumer Durables,Large Cap,Consumer Durables
+TORNTPHARM,Healthcare,Large Cap,Healthcare
+TRENT,Consumer Services,Large Cap,Consumer Services
+ULTRACEMCO,Construction Materials,Large Cap,Construction Materials
+UNIONBANK,Financial Services,Large Cap,Financial Services
+VBL,Fast Moving Consumer Goods,Large Cap,Fast Moving Consumer Goods
+VAML,Metals & Mining,Large Cap,Metals & Mining
+VEDL,Metals & Mining,Large Cap,Metals & Mining
+IDEA,Telecommunication,Large Cap,Telecommunication
+WIPRO,Information Technology,Large Cap,Information Technology
+ZYDUSLIFE,Healthcare,Large Cap,Healthcare
+360ONE,Financial Services,Mid Cap,Financial Services
+AIAENG,Capital Goods,Mid Cap,Capital Goods
+APLAPOLLO,Capital Goods,Mid Cap,Capital Goods
+AUBANK,Financial Services,Mid Cap,Financial Services
+ABBOTINDIA,Healthcare,Mid Cap,Healthcare
+ATGL,Oil Gas & Consumable Fuels,Mid Cap,Oil Gas & Consumable Fuels
+ABCAPITAL,Financial Services,Mid Cap,Financial Services
+AJANTPHARM,Healthcare,Mid Cap,Healthcare
+ALKEM,Healthcare,Mid Cap,Healthcare
+ANTHEM,Healthcare,Mid Cap,Healthcare
+APARINDS,Capital Goods,Mid Cap,Capital Goods
+ASHOKLEY,Capital Goods,Mid Cap,Capital Goods
+ASTERDM,Healthcare,Mid Cap,Healthcare
+ASTRAL,Capital Goods,Mid Cap,Capital Goods
+AUROPHARMA,Healthcare,Mid Cap,Healthcare
+AIIL,Financial Services,Mid Cap,Financial Services
+BAJAJHFL,Financial Services,Mid Cap,Financial Services
+BALKRISIND,Automobile and Auto Components,Mid Cap,Automobile and Auto Components
+BANKINDIA,Financial Services,Mid Cap,Financial Services
+MAHABANK,Financial Services,Mid Cap,Financial Services
+BERGEPAINT,Consumer Durables,Mid Cap,Consumer Durables
+BDL,Capital Goods,Mid Cap,Capital Goods
+BHARATFORG,Automobile and Auto Components,Mid Cap,Automobile and Auto Components
+BHEL,Capital Goods,Mid Cap,Capital Goods
+BHARTIHEXA,Telecommunication,Mid Cap,Telecommunication
+GROWW,Financial Services,Mid Cap,Financial Services
+BIOCON,Healthcare,Mid Cap,Healthcare
+BLUESTARCO,Consumer Durables,Mid Cap,Consumer Durables
+CRISIL,Financial Services,Mid Cap,Financial Services
+COCHINSHIP,Capital Goods,Mid Cap,Capital Goods
+COFORGE,Information Technology,Mid Cap,Information Technology
+COLPAL,Fast Moving Consumer Goods,Mid Cap,Fast Moving Consumer Goods
+CONCOR,Services,Mid Cap,Services
+COROMANDEL,Chemicals,Mid Cap,Chemicals
+DABUR,Fast Moving Consumer Goods,Mid Cap,Fast Moving Consumer Goods
+DALBHARAT,Construction Materials,Mid Cap,Construction Materials
+DIXON,Consumer Durables,Mid Cap,Consumer Durables
+EMBASSY,Realty,Mid Cap,Realty
+ENDURANCE,Automobile and Auto Components,Mid Cap,Automobile and Auto Components
+ESCORTS,Capital Goods,Mid Cap,Capital Goods
+EXIDEIND,Automobile and Auto Components,Mid Cap,Automobile and Auto Components
+NYKAA,Consumer Services,Mid Cap,Consumer Services
+FEDERALBNK,Financial Services,Mid Cap,Financial Services
+FACT,Chemicals,Mid Cap,Chemicals
+FORTIS,Healthcare,Mid Cap,Healthcare
+GVT&D,Capital Goods,Mid Cap,Capital Goods
+GMRAIRPORT,Services,Mid Cap,Services
+GICRE,Financial Services,Mid Cap,Financial Services
+GLAXO,Healthcare,Mid Cap,Healthcare
+GLENMARK,Healthcare,Mid Cap,Healthcare
+MEDANTA,Healthcare,Mid Cap,Healthcare
+GODFRYPHLP,Fast Moving Consumer Goods,Mid Cap,Fast Moving Consumer Goods
+GODREJIND,Diversified,Mid Cap,Diversified
+GODREJPROP,Realty,Mid Cap,Realty
+FLUOROCHEM,Chemicals,Mid Cap,Chemicals
+HDBFS,Financial Services,Mid Cap,Financial Services
+HAVELLS,Consumer Durables,Mid Cap,Consumer Durables
+HEROMOTOCO,Automobile and Auto Components,Mid Cap,Automobile and Auto Components
+HEXT,Information Technology,Mid Cap,Information Technology
+HINDCOPPER,Metals & Mining,Mid Cap,Metals & Mining
+HINDPETRO,Oil Gas & Consumable Fuels,Mid Cap,Oil Gas & Consumable Fuels
+HUDCO,Financial Services,Mid Cap,Financial Services
+ICICILIFE,Financial Services,Mid Cap,Financial Services
+ICICIGI,Financial Services,Mid Cap,Financial Services
+ICICIAMC,Financial Services,Mid Cap,Financial Services
+IDFCFIRSTB,Financial Services,Mid Cap,Financial Services
+ITCHOTELS,Consumer Services,Mid Cap,Consumer Services
+INDIANB,Financial Services,Mid Cap,Financial Services
+INDHOTEL,Consumer Services,Mid Cap,Consumer Services
+IOB,Financial Services,Mid Cap,Financial Services
+IRCTC,Consumer Services,Mid Cap,Consumer Services
+IREDA,Financial Services,Mid Cap,Financial Services
+INDUSTOWER,Telecommunication,Mid Cap,Telecommunication
+INDUSINDBK,Financial Services,Mid Cap,Financial Services
+NAUKRI,Consumer Services,Mid Cap,Consumer Services
+IPCALAB,Healthcare,Mid Cap,Healthcare
+JKCEMENT,Construction Materials,Mid Cap,Construction Materials
+JSWENERGY,Power,Mid Cap,Power
+JSWINFRA,Services,Mid Cap,Services
+JSL,Metals & Mining,Mid Cap,Metals & Mining
+JUBLFOOD,Consumer Services,Mid Cap,Consumer Services
+KPRMILL,Textiles,Mid Cap,Textiles
+KEI,Capital Goods,Mid Cap,Capital Goods
+KALYANKJIL,Consumer Durables,Mid Cap,Consumer Durables
+LTF,Financial Services,Mid Cap,Financial Services
+LTTS,Information Technology,Mid Cap,Information Technology
+LGEINDIA,Consumer Durables,Mid Cap,Consumer Durables
+LICHSGFIN,Financial Services,Mid Cap,Financial Services
+LAURUSLABS,Healthcare,Mid Cap,Healthcare
+LENSKART,Consumer Services,Mid Cap,Consumer Services
+LICI,Financial Services,Mid Cap,Financial Services
+LINDEINDIA,Chemicals,Mid Cap,Chemicals
+LLOYDSME,Metals & Mining,Mid Cap,Metals & Mining
+LODHA,Realty,Mid Cap,Realty
+LUPIN,Healthcare,Mid Cap,Healthcare
+MRF,Automobile and Auto Components,Mid Cap,Automobile and Auto Components
+M&MFIN,Financial Services,Mid Cap,Financial Services
+MANKIND,Healthcare,Mid Cap,Healthcare
+MARICO,Fast Moving Consumer Goods,Mid Cap,Fast Moving Consumer Goods
+MFSL,Financial Services,Mid Cap,Financial Services
+MEESHO,Consumer Services,Mid Cap,Consumer Services
+MOTILALOFS,Financial Services,Mid Cap,Financial Services
+MPHASIS,Information Technology,Mid Cap,Information Technology
+MCX,Financial Services,Mid Cap,Financial Services
+NHPC,Power,Mid Cap,Power
+NLCINDIA,Power,Mid Cap,Power
+NMDC,Metals & Mining,Mid Cap,Metals & Mining
+NTPCGREEN,Power,Mid Cap,Power
+NH,Healthcare,Mid Cap,Healthcare
+NATIONALUM,Metals & Mining,Mid Cap,Metals & Mining
+NAM-INDIA,Financial Services,Mid Cap,Financial Services
+OBEROIRLTY,Realty,Mid Cap,Realty
+OIL,Oil Gas & Consumable Fuels,Mid Cap,Oil Gas & Consumable Fuels
+PAYTM,Financial Services,Mid Cap,Financial Services
+OFSS,Information Technology,Mid Cap,Information Technology
+POLICYBZR,Financial Services,Mid Cap,Financial Services
+PIIND,Chemicals,Mid Cap,Chemicals
+PAGEIND,Textiles,Mid Cap,Textiles
+PATANJALI,Fast Moving Consumer Goods,Mid Cap,Fast Moving Consumer Goods
+PERSISTENT,Information Technology,Mid Cap,Information Technology
+PETRONET,Oil Gas & Consumable Fuels,Mid Cap,Oil Gas & Consumable Fuels
+PHOENIXLTD,Realty,Mid Cap,Realty
+PIRAMALFIN,Financial Services,Mid Cap,Financial Services
+PREMIERENE,Capital Goods,Mid Cap,Capital Goods
+PRESTIGE,Realty,Mid Cap,Realty
+RECLTD,Financial Services,Mid Cap,Financial Services
+RADICO,Fast Moving Consumer Goods,Mid Cap,Fast Moving Consumer Goods
+RVNL,Construction,Mid Cap,Construction
+SBICARD,Financial Services,Mid Cap,Financial Services
+SRF,Chemicals,Mid Cap,Chemicals
+SCHAEFFLER,Automobile and Auto Components,Mid Cap,Automobile and Auto Components
+SHREECEM,Construction Materials,Mid Cap,Construction Materials
+SAIL,Metals & Mining,Mid Cap,Metals & Mining
+SUNDARMFIN,Financial Services,Mid Cap,Financial Services
+SUPREMEIND,Capital Goods,Mid Cap,Capital Goods
+SUZLON,Capital Goods,Mid Cap,Capital Goods
+SWIGGY,Consumer Services,Mid Cap,Consumer Services
+TATACOMM,Telecommunication,Mid Cap,Telecommunication
+TATAINVEST,Financial Services,Mid Cap,Financial Services
+THERMAX,Capital Goods,Mid Cap,Capital Goods
+TORNTPOWER,Power,Mid Cap,Power
+TIINDIA,Automobile and Auto Components,Mid Cap,Automobile and Auto Components
+UNOMINDA,Automobile and Auto Components,Mid Cap,Automobile and Auto Components
+UPL,Chemicals,Mid Cap,Chemicals
+UBL,Fast Moving Consumer Goods,Mid Cap,Fast Moving Consumer Goods
+UNITDSPR,Fast Moving Consumer Goods,Mid Cap,Fast Moving Consumer Goods
+VMM,Consumer Services,Mid Cap,Consumer Services
+VOLTAS,Consumer Durables,Mid Cap,Consumer Durables
+WAAREEENER,Capital Goods,Mid Cap,Capital Goods
+YESBANK,Financial Services,Mid Cap,Financial Services
+ACC,Construction Materials,Small Cap,Construction Materials
+ACMESOLAR,Power,Small Cap,Power
+AWL,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+AADHARHFC,Financial Services,Small Cap,Financial Services
+AARTIIND,Chemicals,Small Cap,Chemicals
+AAVAS,Financial Services,Small Cap,Financial Services
+ACE,Capital Goods,Small Cap,Capital Goods
+ACUTAAS,Healthcare,Small Cap,Healthcare
+ABREL,Realty,Small Cap,Realty
+ABSLAMC,Financial Services,Small Cap,Financial Services
+CPPLUS,Capital Goods,Small Cap,Capital Goods
+AEGISLOG,Oil Gas & Consumable Fuels,Small Cap,Oil Gas & Consumable Fuels
+AEGISVOPAK,Oil Gas & Consumable Fuels,Small Cap,Oil Gas & Consumable Fuels
+AETHER,Chemicals,Small Cap,Chemicals
+AFCONS,Construction,Small Cap,Construction
+AFFLE,Information Technology,Small Cap,Information Technology
+ABDL,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+ARE&M,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+AMBER,Consumer Durables,Small Cap,Consumer Durables
+ANANDRATHI,Financial Services,Small Cap,Financial Services
+ANANTRAJ,Realty,Small Cap,Realty
+ANGELONE,Financial Services,Small Cap,Financial Services
+ANURAS,Chemicals,Small Cap,Chemicals
+APOLLOTYRE,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+APTUS,Financial Services,Small Cap,Financial Services
+ASAHIINDIA,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+ATHERENERG,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+ATUL,Chemicals,Small Cap,Chemicals
+AVANTIFEED,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+AZAD,Capital Goods,Small Cap,Capital Goods
+BEML,Capital Goods,Small Cap,Capital Goods
+BLS,Consumer Services,Small Cap,Consumer Services
+BAGMANE,Realty,Small Cap,Realty
+BALRAMCHIN,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+BANDHANBNK,Financial Services,Small Cap,Financial Services
+BATAINDIA,Consumer Durables,Small Cap,Consumer Durables
+BELRISE,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+BHARATCOAL,Oil Gas & Consumable Fuels,Small Cap,Oil Gas & Consumable Fuels
+BSOFT,Information Technology,Small Cap,Information Technology
+BBOX,Information Technology,Small Cap,Information Technology
+FIRSTCRY,Consumer Services,Small Cap,Consumer Services
+BRIGADE,Realty,Small Cap,Realty
+BIRET,Realty,Small Cap,Realty
+CCL,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+CESC,Power,Small Cap,Power
+CIEINDIA,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+CANFINHOME,Financial Services,Small Cap,Financial Services
+CANHLIFE,Financial Services,Small Cap,Financial Services
+CAPLIPOINT,Healthcare,Small Cap,Healthcare
+CGCL,Financial Services,Small Cap,Financial Services
+CARBORUNIV,Capital Goods,Small Cap,Capital Goods
+CARTRADE,Consumer Services,Small Cap,Consumer Services
+CASTROLIND,Oil Gas & Consumable Fuels,Small Cap,Oil Gas & Consumable Fuels
+CEATLTD,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+CEMPRO,Construction,Small Cap,Construction
+CENTRALBK,Financial Services,Small Cap,Financial Services
+CDSL,Financial Services,Small Cap,Financial Services
+CMPDI,Services,Small Cap,Services
+CHAMBLFERT,Chemicals,Small Cap,Chemicals
+CHENNPETRO,Oil Gas & Consumable Fuels,Small Cap,Oil Gas & Consumable Fuels
+CHOICEIN,Financial Services,Small Cap,Financial Services
+CHOLAHLDNG,Financial Services,Small Cap,Financial Services
+CUB,Financial Services,Small Cap,Financial Services
+CLEANMAX,Power,Small Cap,Power
+CLEAN,Chemicals,Small Cap,Chemicals
+COHANCE,Healthcare,Small Cap,Healthcare
+CAMS,Financial Services,Small Cap,Financial Services
+CONCORDBIO,Healthcare,Small Cap,Healthcare
+CRAFTSMAN,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+CREDITACC,Financial Services,Small Cap,Financial Services
+CROMPTON,Consumer Durables,Small Cap,Consumer Durables
+CUPID,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+CYIENT,Information Technology,Small Cap,Information Technology
+DOMS,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+DATAPATTNS,Capital Goods,Small Cap,Capital Goods
+DEEPAKFERT,Chemicals,Small Cap,Chemicals
+DEEPAKNTR,Chemicals,Small Cap,Chemicals
+DELHIVERY,Services,Small Cap,Services
+DEVYANI,Consumer Services,Small Cap,Consumer Services
+LALPATHLAB,Healthcare,Small Cap,Healthcare
+DUMMYHEG,Capital Goods,Small Cap,Capital Goods
+EIDPARRY,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+EIHOTEL,Consumer Services,Small Cap,Consumer Services
+ELECON,Capital Goods,Small Cap,Capital Goods
+ELGIEQUIP,Capital Goods,Small Cap,Capital Goods
+EMAMILTD,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+EMCURE,Healthcare,Small Cap,Healthcare
+EMMVEE,Capital Goods,Small Cap,Capital Goods
+ENGINERSIN,Construction,Small Cap,Construction
+FINCABLES,Capital Goods,Small Cap,Capital Goods
+FSL,Services,Small Cap,Services
+FIVESTAR,Financial Services,Small Cap,Financial Services
+FORCEMOT,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+FRACTAL,Information Technology,Small Cap,Information Technology
+GABRIEL,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+GALLANTT,Capital Goods,Small Cap,Capital Goods
+GRSE,Capital Goods,Small Cap,Capital Goods
+GILLETTE,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+GLAND,Healthcare,Small Cap,Healthcare
+GPIL,Capital Goods,Small Cap,Capital Goods
+GRANULES,Healthcare,Small Cap,Healthcare
+GRAPHITE,Capital Goods,Small Cap,Capital Goods
+GRAVITA,Metals & Mining,Small Cap,Metals & Mining
+GESHIP,Services,Small Cap,Services
+GMDCLTD,Metals & Mining,Small Cap,Metals & Mining
+HBLENGINE,Capital Goods,Small Cap,Capital Goods
+HEGAM,Capital Goods,Small Cap,Capital Goods
+HFCL,Telecommunication,Small Cap,Telecommunication
+HSCL,Chemicals,Small Cap,Chemicals
+HOMEFIRST,Financial Services,Small Cap,Financial Services
+HONASA,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+HONAUT,Capital Goods,Small Cap,Capital Goods
+IDBI,Financial Services,Small Cap,Financial Services
+IFCI,Financial Services,Small Cap,Financial Services
+IIFL,Financial Services,Small Cap,Financial Services
+INOXINDIA,Capital Goods,Small Cap,Capital Goods
+IRB,Construction,Small Cap,Construction
+IRCON,Construction,Small Cap,Construction
+ITI,Telecommunication,Small Cap,Telecommunication
+INDIACEM,Construction Materials,Small Cap,Construction Materials
+INDIAMART,Consumer Services,Small Cap,Consumer Services
+IEX,Financial Services,Small Cap,Financial Services
+IGL,Oil Gas & Consumable Fuels,Small Cap,Oil Gas & Consumable Fuels
+INOXWIND,Capital Goods,Small Cap,Capital Goods
+INTELLECT,Information Technology,Small Cap,Information Technology
+IGIL,Services,Small Cap,Services
+IKS,Information Technology,Small Cap,Information Technology
+JBMA,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+JKTYRE,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+JMFINANCIL,Financial Services,Small Cap,Financial Services
+JSWCEMENT,Construction Materials,Small Cap,Construction Materials
+JAINREC,Metals & Mining,Small Cap,Metals & Mining
+JPPOWER,Power,Small Cap,Power
+J&KBANK,Financial Services,Small Cap,Financial Services
+JINDALSAW,Capital Goods,Small Cap,Capital Goods
+JUBLINGREA,Chemicals,Small Cap,Chemicals
+JWL,Capital Goods,Small Cap,Capital Goods
+JYOTICNC,Capital Goods,Small Cap,Capital Goods
+KPITTECH,Information Technology,Small Cap,Information Technology
+KSB,Capital Goods,Small Cap,Capital Goods
+KAJARIACER,Consumer Durables,Small Cap,Consumer Durables
+KPIL,Construction,Small Cap,Construction
+KARURVYSYA,Financial Services,Small Cap,Financial Services
+KAYNES,Capital Goods,Small Cap,Capital Goods
+KEC,Construction,Small Cap,Construction
+KFINTECH,Financial Services,Small Cap,Financial Services
+KIRLOSBROS,Capital Goods,Small Cap,Capital Goods
+KIRLOSENG,Capital Goods,Small Cap,Capital Goods
+KIMS,Healthcare,Small Cap,Healthcare
+LTFOODS,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+LEMONTREE,Consumer Services,Small Cap,Consumer Services
+MMTC,Services,Small Cap,Services
+MTARTECH,Capital Goods,Small Cap,Capital Goods
+MGL,Oil Gas & Consumable Fuels,Small Cap,Oil Gas & Consumable Fuels
+MANAPPURAM,Financial Services,Small Cap,Financial Services
+MRPL,Oil Gas & Consumable Fuels,Small Cap,Oil Gas & Consumable Fuels
+MINDACORP,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+MSUMI,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+NATCOPHARM,Healthcare,Small Cap,Healthcare
+NBCC,Construction,Small Cap,Construction
+NCC,Construction,Small Cap,Construction
+NSLNISP,Metals & Mining,Small Cap,Metals & Mining
+NAVA,Power,Small Cap,Power
+NAVINFLUOR,Chemicals,Small Cap,Chemicals
+NETWEB,Information Technology,Small Cap,Information Technology
+NEULANDLAB,Healthcare,Small Cap,Healthcare
+NUVAMA,Financial Services,Small Cap,Financial Services
+NUVOCO,Construction Materials,Small Cap,Construction Materials
+OLAELEC,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+OLECTRA,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+ONESOURCE,Healthcare,Small Cap,Healthcare
+PCBL,Chemicals,Small Cap,Chemicals
+PGEL,Consumer Durables,Small Cap,Consumer Durables
+PNBHOUSING,Financial Services,Small Cap,Financial Services
+PTCIL,Capital Goods,Small Cap,Capital Goods
+PVRINOX,Media Entertainment & Publication,Small Cap,Media Entertainment & Publication
+PARADEEP,Chemicals,Small Cap,Chemicals
+PWL,Consumer Services,Small Cap,Consumer Services
+PINELABS,Financial Services,Small Cap,Financial Services
+PPLPHARMA,Healthcare,Small Cap,Healthcare
+POLYMED,Healthcare,Small Cap,Healthcare
+POONAWALLA,Financial Services,Small Cap,Financial Services
+PFOCUS,Media Entertainment & Publication,Small Cap,Media Entertainment & Publication
+PRIVISCL,Chemicals,Small Cap,Chemicals
+RRKABEL,Capital Goods,Small Cap,Capital Goods
+RBLBANK,Financial Services,Small Cap,Financial Services
+RHIM,Capital Goods,Small Cap,Capital Goods
+RITES,Construction,Small Cap,Construction
+RAILTEL,Telecommunication,Small Cap,Telecommunication
+RAINBOW,Healthcare,Small Cap,Healthcare
+RKFORGE,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+REDINGTON,Services,Small Cap,Services
+RPOWER,Power,Small Cap,Power
+RUBICON,Healthcare,Small Cap,Healthcare
+SJVN,Power,Small Cap,Power
+SHRIPISTON,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+SAGILITY,Information Technology,Small Cap,Information Technology
+SAILIFE,Healthcare,Small Cap,Healthcare
+SAMMAANCAP,Financial Services,Small Cap,Financial Services
+SANSERA,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+SARDAEN,Metals & Mining,Small Cap,Metals & Mining
+SCHNEIDER,Capital Goods,Small Cap,Capital Goods
+SCI,Services,Small Cap,Services
+SHYAMMETL,Capital Goods,Small Cap,Capital Goods
+SIGNATURE,Realty,Small Cap,Realty
+SOBHA,Realty,Small Cap,Realty
+SONACOMS,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+STARHEALTH,Financial Services,Small Cap,Financial Services
+STLTECH,Telecommunication,Small Cap,Telecommunication
+SUMICHEM,Chemicals,Small Cap,Chemicals
+SUNTV,Media Entertainment & Publication,Small Cap,Media Entertainment & Publication
+SWANCORP,Chemicals,Small Cap,Chemicals
+SYNGENE,Healthcare,Small Cap,Healthcare
+SYRMA,Capital Goods,Small Cap,Capital Goods
+TBOTEK,Consumer Services,Small Cap,Consumer Services
+TDPOWERSYS,Capital Goods,Small Cap,Capital Goods
+TATACHEM,Chemicals,Small Cap,Chemicals
+TATAELXSI,Information Technology,Small Cap,Information Technology
+TATATECH,Information Technology,Small Cap,Information Technology
+TTML,Telecommunication,Small Cap,Telecommunication
+TECHNOE,Construction,Small Cap,Construction
+TEGA,Capital Goods,Small Cap,Capital Goods
+TEJASNET,Telecommunication,Small Cap,Telecommunication
+TENNIND,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+THANGAMAYL,Consumer Durables,Small Cap,Consumer Durables
+NIACL,Financial Services,Small Cap,Financial Services
+RAMCOCEM,Construction Materials,Small Cap,Construction Materials
+TIMKEN,Capital Goods,Small Cap,Capital Goods
+TITAGARH,Capital Goods,Small Cap,Capital Goods
+TARIL,Capital Goods,Small Cap,Capital Goods
+TRIDENT,Textiles,Small Cap,Textiles
+TRITURBINE,Capital Goods,Small Cap,Capital Goods
+UCOBANK,Financial Services,Small Cap,Financial Services
+UTIAMC,Financial Services,Small Cap,Financial Services
+URBANCO,Consumer Services,Small Cap,Consumer Services
+USHAMART,Capital Goods,Small Cap,Capital Goods
+VTL,Textiles,Small Cap,Textiles
+VISL,Metals & Mining,Small Cap,Metals & Mining
+VOGL,Oil Gas & Consumable Fuels,Small Cap,Oil Gas & Consumable Fuels
+VEDPOWER,Power,Small Cap,Power
+VIJAYA,Healthcare,Small Cap,Healthcare
+WELCORP,Capital Goods,Small Cap,Capital Goods
+WELSPUNLIV,Textiles,Small Cap,Textiles
+WHIRLPOOL,Consumer Durables,Small Cap,Consumer Durables
+WOCKPHARMA,Healthcare,Small Cap,Healthcare
+ZFCVINDIA,Automobile and Auto Components,Small Cap,Automobile and Auto Components
+ZEEL,Media Entertainment & Publication,Small Cap,Media Entertainment & Publication
+ZENTEC,Capital Goods,Small Cap,Capital Goods
+ZENSARTECH,Information Technology,Small Cap,Information Technology
+ZYDUSWELL,Fast Moving Consumer Goods,Small Cap,Fast Moving Consumer Goods
+ECLERX,Services,Small Cap,Services
+AXISCADES,Capital Goods,Micro/Other,Capital Goods
+AARTIPHARM,Healthcare,Micro/Other,Healthcare
+ABFRL,Consumer Services,Micro/Other,Consumer Services
+ABLBL,Consumer Services,Micro/Other,Consumer Services
+AVL,Consumer Services,Micro/Other,Consumer Services
+ADVENZYMES,Healthcare,Micro/Other,Healthcare
+AEQUS,Capital Goods,Micro/Other,Capital Goods
+AEROFLEX,Capital Goods,Micro/Other,Capital Goods
+AKUMS,Healthcare,Micro/Other,Healthcare
+ALKYLAMINE,Chemicals,Micro/Other,Chemicals
+AMAGI,Information Technology,Micro/Other,Information Technology
+APOLLO,Capital Goods,Micro/Other,Capital Goods
+ACI,Chemicals,Micro/Other,Chemicals
+ARVINDFASN,Consumer Services,Micro/Other,Consumer Services
+ARVIND,Textiles,Micro/Other,Textiles
+ASHAPURMIN,Metals & Mining,Micro/Other,Metals & Mining
+ASHOKA,Construction,Micro/Other,Construction
+ASTRAMICRO,Capital Goods,Micro/Other,Capital Goods
+ATLANTAELE,Capital Goods,Micro/Other,Capital Goods
+AURIONPRO,Information Technology,Micro/Other,Information Technology
+AVALON,Capital Goods,Micro/Other,Capital Goods
+BAJAJCON,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+BALAMINES,Chemicals,Micro/Other,Chemicals
+BALUFORGE,Capital Goods,Micro/Other,Capital Goods
+BANCOINDIA,Automobile and Auto Components,Micro/Other,Automobile and Auto Components
+BIRLACORPN,Construction Materials,Micro/Other,Construction Materials
+BLACKBUCK,Services,Micro/Other,Services
+BLUEJET,Healthcare,Micro/Other,Healthcare
+BLUESTONE,Consumer Durables,Micro/Other,Consumer Durables
+BORORENEW,Capital Goods,Micro/Other,Capital Goods
+MAPMYINDIA,Information Technology,Micro/Other,Information Technology
+CMRGREEN,Capital Goods,Micro/Other,Capital Goods
+CMSINFO,Services,Micro/Other,Services
+CSBBANK,Financial Services,Micro/Other,Financial Services
+CAMPUS,Consumer Durables,Micro/Other,Consumer Durables
+CRAMC,Financial Services,Micro/Other,Financial Services
+CAPILLARY,Information Technology,Micro/Other,Information Technology
+CEIGALL,Construction,Micro/Other,Construction
+CELLO,Consumer Durables,Micro/Other,Consumer Durables
+CENTUM,Capital Goods,Micro/Other,Capital Goods
+CERA,Consumer Durables,Micro/Other,Consumer Durables
+CHALET,Consumer Services,Micro/Other,Consumer Services
+DCBBANK,Financial Services,Micro/Other,Financial Services
+DATAMATICS,Information Technology,Micro/Other,Information Technology
+DIACABS,Capital Goods,Micro/Other,Capital Goods
+DBL,Construction,Micro/Other,Construction
+DUMMYINXGN,Construction,Micro/Other,Construction
+DYNAMATECH,Capital Goods,Micro/Other,Capital Goods
+E2E,Information Technology,Micro/Other,Information Technology
+EPL,Capital Goods,Micro/Other,Capital Goods
+EDELWEISS,Financial Services,Micro/Other,Financial Services
+EMIL,Consumer Services,Micro/Other,Consumer Services
+ELECTCAST,Capital Goods,Micro/Other,Capital Goods
+ELLEN,Chemicals,Micro/Other,Chemicals
+EMBDL,Realty,Micro/Other,Realty
+ENNATURE,Healthcare,Micro/Other,Healthcare
+ENTERO,Consumer Services,Micro/Other,Consumer Services
+EIEL,Utilities,Micro/Other,Utilities
+EQUITASBNK,Financial Services,Micro/Other,Financial Services
+ERIS,Healthcare,Micro/Other,Healthcare
+FEDFINA,Financial Services,Micro/Other,Financial Services
+FIEMIND,Automobile and Auto Components,Micro/Other,Automobile and Auto Components
+FINPIPE,Capital Goods,Micro/Other,Capital Goods
+UTLSOLAR,Capital Goods,Micro/Other,Capital Goods
+GMRP&UI,Power,Micro/Other,Power
+EBGNG,Information Technology,Micro/Other,Information Technology
+GRWRHITECH,Capital Goods,Micro/Other,Capital Goods
+GENUSPOWER,Capital Goods,Micro/Other,Capital Goods
+GODREJAGRO,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+GOKEX,Textiles,Micro/Other,Textiles
+GOKULAGRO,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+GOLDIAM,Consumer Durables,Micro/Other,Consumer Durables
+GREAVESCOT,Capital Goods,Micro/Other,Capital Goods
+GRINDWELL,Capital Goods,Micro/Other,Capital Goods
+GUJALKALI,Chemicals,Micro/Other,Chemicals
+GAEL,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+GNFC,Chemicals,Micro/Other,Chemicals
+GPPL,Services,Micro/Other,Services
+GSFC,Chemicals,Micro/Other,Chemicals
+HGINFRA,Construction,Micro/Other,Construction
+HAPPSTMNDS,Information Technology,Micro/Other,Information Technology
+HAPPYFORGE,Capital Goods,Micro/Other,Capital Goods
+HCG,Healthcare,Micro/Other,Healthcare
+HERITGFOOD,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+HCC,Construction,Micro/Other,Construction
+IFBIND,Consumer Durables,Micro/Other,Consumer Durables
+IIFLCAPS,Financial Services,Micro/Other,Financial Services
+INDGN,Healthcare,Micro/Other,Healthcare
+INDIAGLYCO,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+IMFA,Metals & Mining,Micro/Other,Metals & Mining
+INDIGOPNTS,Consumer Durables,Micro/Other,Consumer Durables
+ICIL,Textiles,Micro/Other,Textiles
+IONEXCHANG,Utilities,Micro/Other,Utilities
+JAIBALAJI,Metals & Mining,Micro/Other,Metals & Mining
+JKPAPER,Forest Materials,Micro/Other,Forest Materials
+JAMNAAUTO,Automobile and Auto Components,Micro/Other,Automobile and Auto Components
+JSFB,Financial Services,Micro/Other,Financial Services
+JAYNECOIND,Capital Goods,Micro/Other,Capital Goods
+JSLL,Consumer Services,Micro/Other,Consumer Services
+JUBLPHARMA,Healthcare,Micro/Other,Healthcare
+JUSTDIAL,Consumer Services,Micro/Other,Consumer Services
+JYOTHYLAB,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+KNRCON,Construction,Micro/Other,Construction
+KPIGREEN,Power,Micro/Other,Power
+KRBL,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+KRN,Capital Goods,Micro/Other,Capital Goods
+KANSAINER,Consumer Durables,Micro/Other,Consumer Durables
+KTKBANK,Financial Services,Micro/Other,Financial Services
+KSCL,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+KIRLPNU,Capital Goods,Micro/Other,Capital Goods
+KITEX,Textiles,Micro/Other,Textiles
+KMEW,Services,Micro/Other,Services
+KWIL,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+LATENTVIEW,Information Technology,Micro/Other,Information Technology
+LXCHEM,Chemicals,Micro/Other,Chemicals
+IXIGO,Consumer Services,Micro/Other,Consumer Services
+THELEELA,Consumer Services,Micro/Other,Consumer Services
+LLOYDSENGG,Capital Goods,Micro/Other,Capital Goods
+LLOYDSENT,Metals & Mining,Micro/Other,Metals & Mining
+LUMAXTECH,Automobile and Auto Components,Micro/Other,Automobile and Auto Components
+LUMAXIND,Automobile and Auto Components,Micro/Other,Automobile and Auto Components
+MOIL,Metals & Mining,Micro/Other,Metals & Mining
+MSTCLTD,Services,Micro/Other,Services
+MBAPL,Chemicals,Micro/Other,Chemicals
+MANORAMA,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+MARKSANS,Healthcare,Micro/Other,Healthcare
+MASTEK,Information Technology,Micro/Other,Information Technology
+MEDPLUS,Consumer Services,Micro/Other,Consumer Services
+METROPOLIS,Healthcare,Micro/Other,Healthcare
+MIDHANI,Capital Goods,Micro/Other,Capital Goods
+BECTORFOOD,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+NEOGEN,Chemicals,Micro/Other,Chemicals
+NFL,Chemicals,Micro/Other,Chemicals
+NAZARA,Media Entertainment & Publication,Micro/Other,Media Entertainment & Publication
+NEPHROPLUS,Healthcare,Micro/Other,Healthcare
+NETWORK18,Media Entertainment & Publication,Micro/Other,Media Entertainment & Publication
+NEWGEN,Information Technology,Micro/Other,Information Technology
+NIVABUPA,Financial Services,Micro/Other,Financial Services
+NORTHARC,Financial Services,Micro/Other,Financial Services
+OMNI,Capital Goods,Micro/Other,Capital Goods
+KISSHT,Financial Services,Micro/Other,Financial Services
+OSWALPUMPS,Capital Goods,Micro/Other,Capital Goods
+PNGJL,Consumer Durables,Micro/Other,Consumer Durables
+PCJEWELLER,Consumer Durables,Micro/Other,Consumer Durables
+PDSL,Textiles,Micro/Other,Textiles
+PNCINFRA,Construction,Micro/Other,Construction
+PTC,Power,Micro/Other,Power
+PAISALO,Financial Services,Micro/Other,Financial Services
+PARAS,Capital Goods,Micro/Other,Capital Goods
+PARKHOSPS,Healthcare,Micro/Other,Healthcare
+PGIL,Textiles,Micro/Other,Textiles
+PFIZER,Healthcare,Micro/Other,Healthcare
+PICCADIL,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+POWERMECH,Construction,Micro/Other,Construction
+POWERICA,Capital Goods,Micro/Other,Capital Goods
+PRAJIND,Capital Goods,Micro/Other,Capital Goods
+PRECWIRE,Capital Goods,Micro/Other,Capital Goods
+PRICOLLTD,Automobile and Auto Components,Micro/Other,Automobile and Auto Components
+PGHL,Healthcare,Micro/Other,Healthcare
+PURVA,Realty,Micro/Other,Realty
+QPOWER,Capital Goods,Micro/Other,Capital Goods
+QUESS,Services,Micro/Other,Services
+RAIN,Chemicals,Micro/Other,Chemicals
+RALLIS,Chemicals,Micro/Other,Chemicals
+RCF,Chemicals,Micro/Other,Chemicals
+RATEGAIN,Information Technology,Micro/Other,Information Technology
+RATNAMANI,Capital Goods,Micro/Other,Capital Goods
+RTNPOWER,Power,Micro/Other,Power
+RAYMONDLSL,Textiles,Micro/Other,Textiles
+REFEX,Utilities,Micro/Other,Utilities
+RELAXO,Consumer Durables,Micro/Other,Consumer Durables
+RELIGARE,Financial Services,Micro/Other,Financial Services
+RESPONIND,Consumer Durables,Micro/Other,Consumer Durables
+RBA,Consumer Services,Micro/Other,Consumer Services
+ROUTE,Telecommunication,Micro/Other,Telecommunication
+SJS,Automobile and Auto Components,Micro/Other,Automobile and Auto Components
+SBFC,Financial Services,Micro/Other,Financial Services
+SEDEMAC,Automobile and Auto Components,Micro/Other,Automobile and Auto Components
+SGMART,Metals & Mining,Micro/Other,Metals & Mining
+SIGMAADV,Capital Goods,Micro/Other,Capital Goods
+SKYGOLD,Consumer Durables,Micro/Other,Consumer Durables
+SMLMAH,Capital Goods,Micro/Other,Capital Goods
+LOTUSDEV,Realty,Micro/Other,Realty
+SAFARI,Consumer Durables,Micro/Other,Consumer Durables
+SAMHI,Consumer Services,Micro/Other,Consumer Services
+SANDUMA,Metals & Mining,Micro/Other,Metals & Mining
+SAPPHIRE,Consumer Services,Micro/Other,Consumer Services
+SAREGAMA,Media Entertainment & Publication,Micro/Other,Media Entertainment & Publication
+SENCO,Consumer Durables,Micro/Other,Consumer Durables
+SENORES,Healthcare,Micro/Other,Healthcare
+SHADOWFAX,Services,Micro/Other,Services
+SHAILY,Consumer Durables,Micro/Other,Consumer Durables
+SHAKTIPUMP,Capital Goods,Micro/Other,Capital Goods
+SHARDACROP,Chemicals,Micro/Other,Chemicals
+SHAREINDIA,Financial Services,Micro/Other,Financial Services
+SFL,Consumer Durables,Micro/Other,Consumer Durables
+SHILCTECH,Capital Goods,Micro/Other,Capital Goods
+SHILPAMED,Healthcare,Micro/Other,Healthcare
+RENUKA,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+SHREEJISPG,Services,Micro/Other,Services
+SKIPPER,Capital Goods,Micro/Other,Capital Goods
+SONATSOFTW,Information Technology,Micro/Other,Information Technology
+SOUTHBANK,Financial Services,Micro/Other,Financial Services
+SWSOLAR,Construction,Micro/Other,Construction
+STAR,Healthcare,Micro/Other,Healthcare
+STYLAMIND,Consumer Durables,Micro/Other,Consumer Durables
+SUBROS,Capital Goods,Micro/Other,Capital Goods
+SUDARSCHEM,Chemicals,Micro/Other,Chemicals
+SUDEEPPHRM,Chemicals,Micro/Other,Chemicals
+SPARC,Healthcare,Micro/Other,Healthcare
+SUNDRMFAST,Automobile and Auto Components,Micro/Other,Automobile and Auto Components
+SUNFLAG,Capital Goods,Micro/Other,Capital Goods
+SUNTECK,Realty,Micro/Other,Realty
+SPLPETRO,Chemicals,Micro/Other,Chemicals
+SUPRIYA,Healthcare,Micro/Other,Healthcare
+SURYAROSNI,Capital Goods,Micro/Other,Capital Goods
+SUVEN,Healthcare,Micro/Other,Healthcare
+TARC,Realty,Micro/Other,Realty
+TTKPRESTIG,Consumer Durables,Micro/Other,Consumer Durables
+TVSSCS,Services,Micro/Other,Services
+TMB,Financial Services,Micro/Other,Financial Services
+TANLA,Information Technology,Micro/Other,Information Technology
+TEXRAIL,Capital Goods,Micro/Other,Capital Goods
+THOMASCOOK,Consumer Services,Micro/Other,Consumer Services
+THYROCARE,Healthcare,Micro/Other,Healthcare
+TI,Fast Moving Consumer Goods,Micro/Other,Fast Moving Consumer Goods
+TIMETECHNO,Capital Goods,Micro/Other,Capital Goods
+TIMEX,Consumer Durables,Micro/Other,Consumer Durables
+TIPSMUSIC,Media Entertainment & Publication,Micro/Other,Media Entertainment & Publication
+TRANSRAILL,Capital Goods,Micro/Other,Capital Goods
+UJJIVANSFB,Financial Services,Micro/Other,Financial Services
+UNIMECH,Capital Goods,Micro/Other,Capital Goods
+VGUARD,Consumer Durables,Micro/Other,Consumer Durables
+VMART,Consumer Services,Micro/Other,Consumer Services
+VIPIND,Consumer Durables,Micro/Other,Consumer Durables
+V2RETAIL,Consumer Services,Micro/Other,Consumer Services
+DBREALTY,Realty,Micro/Other,Realty
+WABAG,Utilities,Micro/Other,Utilities
+VAIBHAVGBL,Consumer Durables,Micro/Other,Consumer Durables
+MANYAVAR,Consumer Services,Micro/Other,Consumer Services
+VESUVIUS,Capital Goods,Micro/Other,Capital Goods
+VIKRAMSOLR,Capital Goods,Micro/Other,Capital Goods
+VIYASH,Healthcare,Micro/Other,Healthcare
+VOLTAMP,Capital Goods,Micro/Other,Capital Goods
+WAAREERTL,Capital Goods,Micro/Other,Capital Goods
+WAKEFIT,Consumer Durables,Micro/Other,Consumer Durables
+WEWORK,Services,Micro/Other,Services
+WEBELSOLAR,Capital Goods,Micro/Other,Capital Goods
+WELENT,Construction,Micro/Other,Construction
+WESTLIFE,Consumer Services,Micro/Other,Consumer Services
+YATHARTH,Healthcare,Micro/Other,Healthcare
+ZAGGLE,Information Technology,Micro/Other,Information Technology
