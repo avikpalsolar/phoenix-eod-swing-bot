@@ -61,7 +61,7 @@ SECTOR_INDEX_MAP = {
 def sync_from_hf():
     if not HF_TOKEN:
         return
-    for fname in [DB_FILE, EOD_STATE_FILE]:
+    for fname in [DB_FILE, EOD_STATE_FILE, FUND_DB_FILE]:
         try:
             hf_hub_download(
                 repo_id=HF_DATASET_REPO, filename=fname, repo_type="dataset",
@@ -69,7 +69,7 @@ def sync_from_hf():
             )
             print(f"☁️ Downloaded {fname}")
         except Exception as e:
-            print(f"ℹ️ {fname} not found in HF ({e})")
+            print(f"ℹ️ {fname} using local fallback ({e})")
 
 def sync_to_hf(files=None):
     if not HF_TOKEN:
@@ -176,6 +176,52 @@ def auto_sync_nse_db(days_back=7) -> int:
         conn.execute("VACUUM")
     conn.close()
     return added
+
+# ==============================================================================
+# ১.৫. WEEKLY FUNDAMENTAL & PE RE-RATING UPDATER (প্রতি শনিবার সকাল ১০:০০ IST)
+# ==============================================================================
+def update_weekly_fundamentals():
+    print(f"📊 [{now_ist().strftime('%Y-%m-%d %H:%M IST')}] Weekly Fundamental & PE Re-rating Update শুরু...")
+    if not os.path.exists(FUND_DB_FILE):
+        print("❌ fundamental_master.csv পাওয়া যায়নি।")
+        return
+
+    fdf = pd.read_csv(FUND_DB_FILE)
+    updated_count = 0
+
+    for idx, row in fdf.iterrows():
+        sym = str(row["symbol"]).strip()
+        try:
+            tk = yf.Ticker(f"{sym}.NS")
+            info = tk.info or {}
+
+            mcap = info.get("marketCap")
+            if mcap and mcap > 0:
+                fdf.at[idx, "Market_Cap_Cr"] = round(mcap / 1e7, 2)
+
+            pe = info.get("trailingPE")
+            if pe and pe > 0:
+                fdf.at[idx, "Current_PE"] = round(float(pe), 2)
+
+            q_inc = tk.quarterly_income_stmt
+            if q_inc is not None and not q_inc.empty and "Basic EPS" in q_inc.index:
+                eps_vals = q_inc.loc["Basic EPS"].dropna().values
+                if len(eps_vals) >= 2:
+                    fdf.at[idx, "EPS_Latest_Q"] = round(float(eps_vals[0]), 2)
+                    fdf.at[idx, "EPS_Preceding_Q"] = round(float(eps_vals[1]), 2)
+
+            updated_count += 1
+            time.sleep(0.25)
+        except Exception:
+            continue
+
+    fdf.to_csv(FUND_DB_FILE, index=False)
+    sync_to_hf(files=[FUND_DB_FILE])
+    send_telegram(
+        f"✅ *Weekly Fundamental & PE Re-Rating DB Updated*\n"
+        f"• মোট আপডেট হয়েছে: `{updated_count}/{len(fdf)}` স্টক\n"
+        f"• পরবর্তী সপ্তাহের EOD স্ক্রিনারে নতুন PE ও EPS ডেটা ব্যবহৃত হবে।"
+    )
 
 # ==============================================================================
 # ২. Swing RS + Supertrend & Sector Ranking & F&O Option S/R
@@ -430,7 +476,6 @@ def process_telegram_questions():
                 context_payload["top_investing_stocks"] = invest_df.to_dict(orient="records") if not invest_df.empty else []
                 context_payload["top_swing_stocks"] = swing_df.to_dict(orient="records") if not swing_df.empty else []
 
-                # Check if user asked about a specific stock symbol
                 all_syms = set(df['symbol'].unique())
                 matched = [w for w in q_upper.replace("?", "").replace(",", " ").split() if w in all_syms]
                 if matched:
@@ -457,7 +502,52 @@ def process_telegram_questions():
 
 if __name__ == "__main__":
     sync_from_hf()
-    process_telegram_questions()
-    if "--qa-only" not in sys.argv:
-        run_nightly_eod_report()
-    sync_to_hf()
+    if "--weekly-fund" in sys.argv:
+        update_weekly_fundamentals()
+    else:
+        process_telegram_questions()
+        if "--qa-only" not in sys.argv:
+            run_nightly_eod_report()
+        sync_to_hf()
+.github/workflows/eod_bot.yml (কপি-পেস্ট করো):
+YAML
+name: Phoenix Nightly EOD Swing & Investing Bot
+
+on:
+  workflow_dispatch:
+  schedule:
+    # প্রতিদিন রাত ৯:৩৫ IST (UTC 16:05) সোম-শুক্র: Nightly EOD Report
+    - cron: '5 16 * * 1-5'
+    # প্রতি শনিবার সকাল ১০:০০ IST (UTC 04:30): Weekly Fundamental & PE Re-Rating Update
+    - cron: '30 4 * * 6'
+
+jobs:
+  run-eod-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run EOD or Weekly Fundamental Pipeline
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          DOW=$(TZ='Asia/Kolkata' date +%u)
+          if [ "$DOW" -eq 6 ]; then
+            python eod_swing_bot.py --weekly-fund
+          else
+            python eod_swing_bot.py
+          fi
