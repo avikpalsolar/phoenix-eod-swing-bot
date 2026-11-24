@@ -3,8 +3,10 @@ name: Phoenix Nightly EOD Swing & Investing Bot
 on:
   workflow_dispatch:
   schedule:
-    # প্রতিদিন রাত ৯:৩৫ IST (UTC 16:05) সোম-শুক্র অটোমেটিক চলবে
+    # প্রতিদিন রাত ৯:৩৫ IST (UTC 16:05) সোম-শুক্র: Nightly EOD Report
     - cron: '5 16 * * 1-5'
+    # প্রতি শনিবার সকাল ১০:০০ IST (UTC 04:30): Weekly Fundamental & PE Re-Rating Update
+    - cron: '30 4 * * 6'
 
 jobs:
   run-eod-bot:
@@ -23,10 +25,16 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Nightly EOD Swing & Investing Pipeline
+      - name: Run EOD or Weekly Fundamental Pipeline
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python eod_swing_bot.py
+        run: |
+          DOW=$(TZ='Asia/Kolkata' date +%u)
+          if [ "$DOW" -eq 6 ]; then
+            python eod_swing_bot.py --weekly-fund
+          else
+            python eod_swing_bot.py
+          fi
