@@ -95,7 +95,8 @@ def send_telegram(msg: str, chat_id: str = TELEGRAM_CHAT_ID):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     for chunk in [msg[i:i+4000] for i in range(0, len(msg), 4000)]:
         try:
-            requests.post(url, json={"chat_id": chat_id, "text": chunk}, timeout=15)
+            r = requests.post(url, json={"chat_id": chat_id, "text": chunk}, timeout=15)
+            print("TG Status:", r.status_code)
         except Exception as e:
             print(f"Telegram Error: {e}")
 
@@ -183,7 +184,7 @@ def auto_sync_nse_db(days_back=7) -> int:
 def update_weekly_fundamentals():
     print(f"📊 [{now_ist().strftime('%Y-%m-%d %H:%M IST')}] Weekly Fundamental & PE Re-rating Update শুরু...")
     if not os.path.exists(FUND_DB_FILE):
-        print("❌ fundamental_master.csv পাওয়া যায়নি।")
+        print("❌ fundamental_master.csv পাওয়া যায়নি।")
         return
 
     fdf = pd.read_csv(FUND_DB_FILE)
@@ -219,7 +220,7 @@ def update_weekly_fundamentals():
     sync_to_hf(files=[FUND_DB_FILE])
     send_telegram(
         f"✅ *Weekly Fundamental & PE Re-Rating DB Updated*\n"
-        f"• মোট আপডেট হয়েছে: `{updated_count}/{len(fdf)}` স্টক\n"
+        f"• মোট আপডেট হয়েছে: `{updated_count}/{len(fdf)}` স্টক\n"
         f"• পরবর্তী সপ্তাহের EOD স্ক্রিনারে নতুন PE ও EPS ডেটা ব্যবহৃত হবে।"
     )
 
@@ -420,13 +421,13 @@ def run_nightly_eod_report():
 
     prompt = f"""
     You are Phoenix Swing, Fundamental Investing & F&O EOD Research Analyst. Date: {latest_dt}.
-    1. SECTORS: Best={json.dumps(sectors['best'])} | Worst={json.dumps(sectors['worst'])}
-    2. SWING CASH (RS_MKT>0, RS_SEC>0, Supertrend Bullish, RSI>=60):
+1. SECTORS: Best={json.dumps(sectors['best'])} | Worst={json.dumps(sectors['worst'])}
+2. SWING CASH (RS_MKT>0, RS_SEC>0, Supertrend Bullish, RSI>=60):
     {swing_df[['symbol', 'close_price', 'RS_MKT', 'RS_SEC', 'rsi_14', 'deliv_per']].to_csv(index=False) if not swing_df.empty else "None"}
-    3. FUNDAMENTAL INVESTING (PE Re-Rating + QoQ EPS Growth + Promoter/FII Buying):
+3. FUNDAMENTAL INVESTING (PE Re-Rating + QoQ EPS Growth + Promoter/FII Buying):
     {invest_df[['symbol', 'close_price', 'Current_PE', 'Historical_PE_5Y', 'Promoter_Chg_%', 'FII_Chg_%', 'deliv_per']].to_csv(index=False) if not invest_df.empty else "None"}
-    4. IV CRUSH: {iv_crush[['symbol', 'close_price', 'IV_%', 'IVR_%', 'IVP_%']].to_csv(index=False) if not iv_crush.empty else "None"}
-    5. OPTION OI BREAKOUTS: Above Call OI={above_res.head(8).to_dict('records')} | Below Put OI={below_sup.head(8).to_dict('records')}
+4. IV CRUSH: {iv_crush[['symbol', 'close_price', 'IV_%', 'IVR_%', 'IVP_%']].to_csv(index=False) if not iv_crush.empty else "None"}
+5. OPTION OI BREAKOUTS: Above Call OI={above_res.head(8).to_dict('records')} | Below Put OI={below_sup.head(8).to_dict('records')}
 
     Write a crisp, actionable Nightly EOD Report in Bengali for Telegram.
     """
@@ -509,45 +510,3 @@ if __name__ == "__main__":
         if "--qa-only" not in sys.argv:
             run_nightly_eod_report()
         sync_to_hf()
-.github/workflows/eod_bot.yml (কপি-পেস্ট করো):
-YAML
-name: Phoenix Nightly EOD Swing & Investing Bot
-
-on:
-  workflow_dispatch:
-  schedule:
-    # প্রতিদিন রাত ৯:৩৫ IST (UTC 16:05) সোম-শুক্র: Nightly EOD Report
-    - cron: '5 16 * * 1-5'
-    # প্রতি শনিবার সকাল ১০:০০ IST (UTC 04:30): Weekly Fundamental & PE Re-Rating Update
-    - cron: '30 4 * * 6'
-
-jobs:
-  run-eod-bot:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Dependencies
-        run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Run EOD or Weekly Fundamental Pipeline
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          DOW=$(TZ='Asia/Kolkata' date +%u)
-          if [ "$DOW" -eq 6 ]; then
-            python eod_swing_bot.py --weekly-fund
-          else
-            python eod_swing_bot.py
-          fi
