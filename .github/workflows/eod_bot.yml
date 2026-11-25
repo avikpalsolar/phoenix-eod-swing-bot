@@ -9,6 +9,7 @@ on:
     # প্রতি শনিবার সকাল ১০:০০ IST-তে Weekly Fundamental আপডেট
     - cron: '0 10 * * 6'
       timezone: 'Asia/Kolkata'
+
 jobs:
   run-eod-bot:
     runs-on: ubuntu-latest
