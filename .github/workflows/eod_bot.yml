@@ -3,11 +3,12 @@ name: Phoenix Nightly EOD Swing & Investing Bot
 on:
   workflow_dispatch:
   schedule:
-    # প্রতিদিন রাত ৯:৩৫ IST (UTC 16:05) সোম-শুক্র: Nightly EOD Report
-    - cron: '5 16 * * 1-5'
-    # প্রতি শনিবার সকাল ১০:০০ IST (UTC 04:30): Weekly Fundamental & PE Re-Rating Update
-    - cron: '30 4 * * 6'
-
+    # সোম থেকে শুক্র রাত ৯:৩০ IST-তে Nightly EOD রিপোর্ট
+    - cron: '30 21 * * 1-5'
+      timezone: 'Asia/Kolkata'
+    # প্রতি শনিবার সকাল ১০:০০ IST-তে Weekly Fundamental আপডেট
+    - cron: '0 10 * * 6'
+      timezone: 'Asia/Kolkata'
 jobs:
   run-eod-bot:
     runs-on: ubuntu-latest
