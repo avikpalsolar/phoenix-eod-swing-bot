@@ -102,7 +102,7 @@ def send_telegram(msg: str, chat_id: str = TELEGRAM_CHAT_ID):
 
 def get_gemini_response(prompt: str, fallback_text: str = "") -> str:
     client = genai.Client(api_key=GEMINI_API_KEY)
-    models = ["gemini-2.5-flash", "gemini-2.5-flash-lite"]
+    models = ["gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-3-flash-preview"]
     last_err = ""
     for attempt in range(4):
         m = models[attempt % len(models)]
@@ -114,7 +114,6 @@ def get_gemini_response(prompt: str, fallback_text: str = "") -> str:
             last_err = str(e)
             time.sleep(3)
     return fallback_text if fallback_text else f"⚠️ AI সামারি ব্যস্ত ({last_err[:60]}), তবে ডেটা সিঙ্ক সম্পন্ন।"
-
 # ==============================================================================
 # ১. NSE Cash Bhavcopy ডাউনলোড ও 200-Day Rolling DB আপডেট
 # ==============================================================================
