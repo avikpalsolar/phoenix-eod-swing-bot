@@ -114,6 +114,7 @@ def get_gemini_response(prompt: str, fallback_text: str = "") -> str:
             last_err = str(e)
             time.sleep(3)
     return fallback_text if fallback_text else f"⚠️ AI সামারি ব্যস্ত ({last_err[:60]}), তবে ডেটা সিঙ্ক সম্পন্ন।"
+
 # ==============================================================================
 # ১. NSE Cash Bhavcopy ডাউনলোড ও 200-Day Rolling DB আপডেট
 # ==============================================================================
@@ -224,7 +225,7 @@ def update_weekly_fundamentals():
     )
 
 # ==============================================================================
-# ২. Swing RS + Supertrend & Sector Ranking & F&O Option S/R
+# ২. Swing RS & Sector Ranking & F&O Option S/R
 # ==============================================================================
 def get_sector_ranking() -> dict:
     stats = []
@@ -272,35 +273,6 @@ def compute_swing_metrics(df: pd.DataFrame) -> pd.DataFrame:
 
     sub['RS_MKT'] = round((sub['close_price'] / sub['nifty_close']).groupby(sub['symbol']).pct_change(periods=lookback) * 100, 2)
     sub['RS_SEC'] = round((sub['close_price'] / sub['sec_close']).groupby(sub['symbol']).pct_change(periods=lookback) * 100, 2)
-
-    def calc_st(g):
-        g = g.sort_values('trade_date').copy()
-        h, l, c = g['high_price'].values, g['low_price'].values, g['close_price'].values
-        n = len(g)
-        if n < 12:
-            g['SUPERTREND'], g['ST_SIGNAL'] = np.nan, 'N/A'
-            return g
-        prev_c = np.roll(c, 1); prev_c[0] = c[0]
-        tr = np.maximum(h - l, np.maximum(np.abs(h - prev_c), np.abs(l - prev_c)))
-        atr = pd.Series(tr).ewm(alpha=1/10, adjust=False).mean().values
-        hl2 = (h + l) / 2.0
-        ub, lb = hl2 + (3.0 * atr), hl2 - (3.0 * atr)
-        uptrend = np.ones(n, dtype=bool); st_val = np.zeros(n)
-        for i in range(1, n):
-            if c[i] > ub[i - 1]: uptrend[i] = True
-            elif c[i] < lb[i - 1]: uptrend[i] = False
-            else:
-                uptrend[i] = uptrend[i - 1]
-                if uptrend[i] and lb[i] < lb[i - 1]: lb[i] = lb[i - 1]
-                if not uptrend[i] and ub[i] > ub[i - 1]: ub[i] = ub[i - 1]
-            st_val[i] = lb[i] if uptrend[i] else ub[i]
-        g['SUPERTREND'], g['ST_SIGNAL'] = np.round(st_val, 2), np.where(uptrend, 'Bullish', 'Bearish')
-        return g
-
-    syms_bak = sub['symbol'].copy()
-    sub = sub.groupby('symbol', group_keys=False).apply(calc_st).reset_index(drop=True)
-    if 'symbol' not in sub.columns:
-        sub['symbol'] = syms_bak.values
     return sub
 
 def fetch_fno_eod_sr_and_iv(df: pd.DataFrame, latest_dt: str):
@@ -385,7 +357,7 @@ def get_screened_lists():
     swing_today = swing_calc[swing_calc['trade_date'] == latest_dt]
     screened_swing = swing_today[
         (swing_today['RS_MKT'] > 0) & (swing_today['RS_SEC'] > 0) &
-        (swing_today['ST_SIGNAL'] == 'Bullish') & (swing_today['rsi_14'] >= 60) &
+        (swing_today['rsi_14'] >= 60) &
         (swing_today['close_price'] >= 50)
     ].sort_values(by=['RS_SEC', 'deliv_per'], ascending=[False, False]).head(15)
 
@@ -420,13 +392,13 @@ def run_nightly_eod_report():
 
     prompt = f"""
     You are Phoenix Swing, Fundamental Investing & F&O EOD Research Analyst. Date: {latest_dt}.
-1. SECTORS: Best={json.dumps(sectors['best'])} | Worst={json.dumps(sectors['worst'])}
-2. SWING CASH (RS_MKT>0, RS_SEC>0, Supertrend Bullish, RSI>=60):
+    1. SECTORS: Best={json.dumps(sectors['best'])} | Worst={json.dumps(sectors['worst'])}
+    2. SWING CASH (RS_MKT>0, RS_SEC>0, RSI>=60):
     {swing_df[['symbol', 'close_price', 'RS_MKT', 'RS_SEC', 'rsi_14', 'deliv_per']].to_csv(index=False) if not swing_df.empty else "None"}
-3. FUNDAMENTAL INVESTING (PE Re-Rating + QoQ EPS Growth + Promoter/FII Buying):
+    3. FUNDAMENTAL INVESTING (PE Re-Rating + QoQ EPS Growth + Promoter/FII Buying):
     {invest_df[['symbol', 'close_price', 'Current_PE', 'Historical_PE_5Y', 'Promoter_Chg_%', 'FII_Chg_%', 'deliv_per']].to_csv(index=False) if not invest_df.empty else "None"}
-4. IV CRUSH: {iv_crush[['symbol', 'close_price', 'IV_%', 'IVR_%', 'IVP_%']].to_csv(index=False) if not iv_crush.empty else "None"}
-5. OPTION OI BREAKOUTS: Above Call OI={above_res.head(8).to_dict('records')} | Below Put OI={below_sup.head(8).to_dict('records')}
+    4. IV CRUSH: {iv_crush[['symbol', 'close_price', 'IV_%', 'IVR_%', 'IVP_%']].to_csv(index=False) if not iv_crush.empty else "None"}
+    5. OPTION OI BREAKOUTS: Above Call OI={above_res.head(8).to_dict('records')} | Below Put OI={below_sup.head(8).to_dict('records')}
 
     Write a crisp, actionable Nightly EOD Report in Bengali for Telegram.
     """
